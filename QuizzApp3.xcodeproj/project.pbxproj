@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B143E0C24B0175C0062522B /* QuizView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B143E0A24B0175C0062522B /* QuizView.xib */; };
+		3B143E0D24B0175C0062522B /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B143E0B24B0175C0062522B /* QuizView.swift */; };
 		3B485A83248D875700A8560C /* QuizzCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B485A82248D875700A8560C /* QuizzCell.swift */; };
 		3B485A85248D8D8800A8560C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B485A84248D8D8800A8560C /* Util.swift */; };
 		3B93A79524AFF67800F45B83 /* QuizzQuestionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B93A79424AFF67800F45B83 /* QuizzQuestionsVC.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B143E0A24B0175C0062522B /* QuizView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuizView.xib; sourceTree = "<group>"; };
+		3B143E0B24B0175C0062522B /* QuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		3B485A82248D875700A8560C /* QuizzCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzCell.swift; sourceTree = "<group>"; };
 		3B485A84248D8D8800A8560C /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		3B93A79424AFF67800F45B83 /* QuizzQuestionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzQuestionsVC.swift; sourceTree = "<group>"; };
@@ -43,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B143E0E24B017F80062522B /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				3B143E0A24B0175C0062522B /* QuizView.xib */,
+				3B143E0B24B0175C0062522B /* QuizView.swift */,
+			);
+			name = Questions;
+			sourceTree = "<group>";
+		};
 		3B33CC4024AFB66A00D11C10 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,7 @@
 		DC10DB2620499F6300FFC13B /* QuizzApp3 */ = {
 			isa = PBXGroup;
 			children = (
+				3B143E0E24B017F80062522B /* Questions */,
 				3B485A84248D8D8800A8560C /* Util.swift */,
 				3B33CC4224AFB6C800D11C10 /* Classic */,
 				3B33CC4124AFB69000D11C10 /* Quizz */,
@@ -162,6 +176,7 @@
 				DC10DB3220499F6300FFC13B /* LaunchScreen.storyboard in Resources */,
 				DC10DB2F20499F6300FFC13B /* Assets.xcassets in Resources */,
 				DC10DB2D20499F6300FFC13B /* Main.storyboard in Resources */,
+				3B143E0C24B0175C0062522B /* QuizView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +191,7 @@
 				3B485A83248D875700A8560C /* QuizzCell.swift in Sources */,
 				3B93A79524AFF67800F45B83 /* QuizzQuestionsVC.swift in Sources */,
 				3B485A85248D8D8800A8560C /* Util.swift in Sources */,
+				3B143E0D24B0175C0062522B /* QuizView.swift in Sources */,
 				DC10DB2A20499F6300FFC13B /* ViewController.swift in Sources */,
 				DC10DB2820499F6300FFC13B /* AppDelegate.swift in Sources */,
 			);
@@ -316,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "Autologin-Swift4/Info.plist";
+				INFOPLIST_FILE = QuizzApp3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iostutorialjunction.Autologin-Swift4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -332,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "Autologin-Swift4/Info.plist";
+				INFOPLIST_FILE = QuizzApp3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iostutorialjunction.Autologin-Swift4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
