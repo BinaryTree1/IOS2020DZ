@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Autologin-Swift4
-//
-//  Created by Aman Aggarwal on 02/03/18.
-//  Copyright © 2018 Aman Aggarwal. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -16,6 +8,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UINavigationBar.appearance().barTintColor = UIColor.white
+        UINavigationBar.appearance().tintColor = UIColor.red
         return true
     }
 

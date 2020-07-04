@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B485A83248D875700A8560C /* QuizzCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B485A82248D875700A8560C /* QuizzCell.swift */; };
+		3B485A85248D8D8800A8560C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B485A84248D8D8800A8560C /* Util.swift */; };
+		3B93A79524AFF67800F45B83 /* QuizzQuestionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B93A79424AFF67800F45B83 /* QuizzQuestionsVC.swift */; };
 		DC10DB2820499F6300FFC13B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC10DB2720499F6300FFC13B /* AppDelegate.swift */; };
 		DC10DB2A20499F6300FFC13B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC10DB2920499F6300FFC13B /* ViewController.swift */; };
 		DC10DB2D20499F6300FFC13B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC10DB2B20499F6300FFC13B /* Main.storyboard */; };
 		DC10DB2F20499F6300FFC13B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC10DB2E20499F6300FFC13B /* Assets.xcassets */; };
 		DC10DB3220499F6300FFC13B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC10DB3020499F6300FFC13B /* LaunchScreen.storyboard */; };
+		DC10DB3C2049A65000FFC13B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC10DB3B2049A65000FFC13B /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC10DB2420499F6300FFC13B /* Autologin-Swift4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Autologin-Swift4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B485A82248D875700A8560C /* QuizzCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzCell.swift; sourceTree = "<group>"; };
+		3B485A84248D8D8800A8560C /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		3B93A79424AFF67800F45B83 /* QuizzQuestionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzQuestionsVC.swift; sourceTree = "<group>"; };
+		DC10DB2420499F6300FFC13B /* QuizzApp3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizzApp3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC10DB2720499F6300FFC13B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC10DB2920499F6300FFC13B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC10DB2C20499F6300FFC13B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC10DB2E20499F6300FFC13B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC10DB3120499F6300FFC13B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC10DB3320499F6300FFC13B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC10DB3B2049A65000FFC13B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,10 +43,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B33CC4024AFB66A00D11C10 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DC10DB2920499F6300FFC13B /* ViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		3B33CC4124AFB69000D11C10 /* Quizz */ = {
+			isa = PBXGroup;
+			children = (
+				3B93A79424AFF67800F45B83 /* QuizzQuestionsVC.swift */,
+				DC10DB3B2049A65000FFC13B /* HomeVC.swift */,
+				3B485A82248D875700A8560C /* QuizzCell.swift */,
+			);
+			name = Quizz;
+			sourceTree = "<group>";
+		};
+		3B33CC4224AFB6C800D11C10 /* Classic */ = {
+			isa = PBXGroup;
+			children = (
+				DC10DB3020499F6300FFC13B /* LaunchScreen.storyboard */,
+				DC10DB3320499F6300FFC13B /* Info.plist */,
+				DC10DB2E20499F6300FFC13B /* Assets.xcassets */,
+				DC10DB2720499F6300FFC13B /* AppDelegate.swift */,
+			);
+			name = Classic;
+			sourceTree = "<group>";
+		};
 		DC10DB1B20499F6300FFC13B = {
 			isa = PBXGroup;
 			children = (
-				DC10DB2620499F6300FFC13B /* Autologin-Swift4 */,
+				DC10DB2620499F6300FFC13B /* QuizzApp3 */,
 				DC10DB2520499F6300FFC13B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +83,29 @@
 		DC10DB2520499F6300FFC13B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC10DB2420499F6300FFC13B /* Autologin-Swift4.app */,
+				DC10DB2420499F6300FFC13B /* QuizzApp3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC10DB2620499F6300FFC13B /* Autologin-Swift4 */ = {
+		DC10DB2620499F6300FFC13B /* QuizzApp3 */ = {
 			isa = PBXGroup;
 			children = (
-				DC10DB2720499F6300FFC13B /* AppDelegate.swift */,
-				DC10DB2920499F6300FFC13B /* ViewController.swift */,
+				3B485A84248D8D8800A8560C /* Util.swift */,
+				3B33CC4224AFB6C800D11C10 /* Classic */,
+				3B33CC4124AFB69000D11C10 /* Quizz */,
+				3B33CC4024AFB66A00D11C10 /* Login */,
 				DC10DB2B20499F6300FFC13B /* Main.storyboard */,
-				DC10DB2E20499F6300FFC13B /* Assets.xcassets */,
-				DC10DB3020499F6300FFC13B /* LaunchScreen.storyboard */,
-				DC10DB3320499F6300FFC13B /* Info.plist */,
 			);
-			path = "Autologin-Swift4";
+			path = QuizzApp3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC10DB2320499F6300FFC13B /* Autologin-Swift4 */ = {
+		DC10DB2320499F6300FFC13B /* QuizzApp3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC10DB3620499F6300FFC13B /* Build configuration list for PBXNativeTarget "Autologin-Swift4" */;
+			buildConfigurationList = DC10DB3620499F6300FFC13B /* Build configuration list for PBXNativeTarget "QuizzApp3" */;
 			buildPhases = (
 				DC10DB2020499F6300FFC13B /* Sources */,
 				DC10DB2120499F6300FFC13B /* Frameworks */,
@@ -79,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = "Autologin-Swift4";
+			name = QuizzApp3;
 			productName = "Autologin-Swift4";
-			productReference = DC10DB2420499F6300FFC13B /* Autologin-Swift4.app */;
+			productReference = DC10DB2420499F6300FFC13B /* QuizzApp3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -92,15 +128,15 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Aman Aggarwal";
+				ORGANIZATIONNAME = "Filip Radović";
 				TargetAttributes = {
 					DC10DB2320499F6300FFC13B = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = DC10DB1F20499F6300FFC13B /* Build configuration list for PBXProject "Autologin-Swift4" */;
+			buildConfigurationList = DC10DB1F20499F6300FFC13B /* Build configuration list for PBXProject "QuizzApp3" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC10DB2320499F6300FFC13B /* Autologin-Swift4 */,
+				DC10DB2320499F6300FFC13B /* QuizzApp3 */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC10DB3C2049A65000FFC13B /* HomeVC.swift in Sources */,
+				3B485A83248D875700A8560C /* QuizzCell.swift in Sources */,
+				3B93A79524AFF67800F45B83 /* QuizzQuestionsVC.swift in Sources */,
+				3B485A85248D8D8800A8560C /* Util.swift in Sources */,
 				DC10DB2A20499F6300FFC13B /* ViewController.swift in Sources */,
 				DC10DB2820499F6300FFC13B /* AppDelegate.swift in Sources */,
 			);
@@ -274,11 +314,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Autologin-Swift4/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iostutorialjunction.Autologin-Swift4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,11 +330,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Autologin-Swift4/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iostutorialjunction.Autologin-Swift4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC10DB1F20499F6300FFC13B /* Build configuration list for PBXProject "Autologin-Swift4" */ = {
+		DC10DB1F20499F6300FFC13B /* Build configuration list for PBXProject "QuizzApp3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC10DB3420499F6300FFC13B /* Debug */,
@@ -310,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC10DB3620499F6300FFC13B /* Build configuration list for PBXNativeTarget "Autologin-Swift4" */ = {
+		DC10DB3620499F6300FFC13B /* Build configuration list for PBXNativeTarget "QuizzApp3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC10DB3720499F6300FFC13B /* Debug */,

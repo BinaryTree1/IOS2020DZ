@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Autologin-Swift4.xcodeproj">
+      location = "self:/Users/ivabr/Downloads/Autologin-Swift4/QuizzApp3.xcodeproj">
    </FileRef>
 </Workspace>
