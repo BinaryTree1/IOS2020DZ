@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B143E0C24B0175C0062522B /* QuizView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B143E0A24B0175C0062522B /* QuizView.xib */; };
 		3B143E0D24B0175C0062522B /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B143E0B24B0175C0062522B /* QuizView.swift */; };
+		3B23F4CC24B28E69007A65B1 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23F4CB24B28E69007A65B1 /* QuestionsView.swift */; };
 		3B485A83248D875700A8560C /* QuizzCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B485A82248D875700A8560C /* QuizzCell.swift */; };
 		3B485A85248D8D8800A8560C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B485A84248D8D8800A8560C /* Util.swift */; };
 		3B93A79524AFF67800F45B83 /* QuizzQuestionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B93A79424AFF67800F45B83 /* QuizzQuestionsVC.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		3B143E0A24B0175C0062522B /* QuizView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuizView.xib; sourceTree = "<group>"; };
 		3B143E0B24B0175C0062522B /* QuizView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		3B23F4CB24B28E69007A65B1 /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
 		3B485A82248D875700A8560C /* QuizzCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzCell.swift; sourceTree = "<group>"; };
 		3B485A84248D8D8800A8560C /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		3B93A79424AFF67800F45B83 /* QuizzQuestionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzQuestionsVC.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			children = (
 				3B143E0A24B0175C0062522B /* QuizView.xib */,
 				3B143E0B24B0175C0062522B /* QuizView.swift */,
+				3B23F4CB24B28E69007A65B1 /* QuestionsView.swift */,
 			);
 			name = Questions;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				3B485A83248D875700A8560C /* QuizzCell.swift in Sources */,
 				3B93A79524AFF67800F45B83 /* QuizzQuestionsVC.swift in Sources */,
 				3B485A85248D8D8800A8560C /* Util.swift in Sources */,
+				3B23F4CC24B28E69007A65B1 /* QuestionsView.swift in Sources */,
 				3B143E0D24B0175C0062522B /* QuizView.swift in Sources */,
 				DC10DB2A20499F6300FFC13B /* ViewController.swift in Sources */,
 				DC10DB2820499F6300FFC13B /* AppDelegate.swift in Sources */,

@@ -50,6 +50,7 @@ class QuizView: UIView {
     }
     
     @IBAction func questionAnswer(sender: UIButton) {
+        print("Click")
         if ( sender.tag == self.answer){
             sender.backgroundColor = UIColor.green
         } else{

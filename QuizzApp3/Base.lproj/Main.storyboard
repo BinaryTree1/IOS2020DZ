@@ -235,39 +235,44 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CB-dR-VEI">
-                                <rect key="frame" x="40" y="269" width="295" height="40"/>
+                                <rect key="frame" x="40" y="289" width="295" height="50"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="mmH-dt-ZIl"/>
+                                    <constraint firstAttribute="height" constant="50" id="mmH-dt-ZIl"/>
                                 </constraints>
-                                <state key="normal" title="Start Quizz"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start Quizz">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d0O-6b-XGg">
-                                <rect key="frame" x="16" y="317" width="343" height="330"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="Eix-SD-muF"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="813-l8-hGL"/>
-                            </scrollView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9S9-CQ-inP" customClass="QuestionsView" customModule="QuizzApp3" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="337" width="375" height="320"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="qAt-JD-EsI" firstAttribute="top" secondItem="KaK-fr-L6r" secondAttribute="top" constant="20" id="27P-QN-puf"/>
+                            <constraint firstItem="KaK-fr-L6r" firstAttribute="bottom" secondItem="9S9-CQ-inP" secondAttribute="bottom" constant="10" id="63P-oa-zZQ"/>
                             <constraint firstItem="KaK-fr-L6r" firstAttribute="trailing" secondItem="qAt-JD-EsI" secondAttribute="trailing" constant="10" id="7Vt-If-A1N"/>
-                            <constraint firstItem="KaK-fr-L6r" firstAttribute="trailing" secondItem="d0O-6b-XGg" secondAttribute="trailing" constant="5" id="9EB-W5-4rb"/>
-                            <constraint firstItem="d0O-6b-XGg" firstAttribute="top" secondItem="1CB-dR-VEI" secondAttribute="bottom" constant="5" id="B4b-wA-VWd"/>
-                            <constraint firstItem="1CB-dR-VEI" firstAttribute="top" secondItem="aiI-7p-b5T" secondAttribute="bottom" constant="10" id="FuM-Fj-doY"/>
-                            <constraint firstItem="d0O-6b-XGg" firstAttribute="leading" secondItem="KaK-fr-L6r" secondAttribute="leading" constant="5" id="OoF-dq-vXj"/>
+                            <constraint firstItem="1CB-dR-VEI" firstAttribute="top" secondItem="aiI-7p-b5T" secondAttribute="bottom" constant="30" id="FuM-Fj-doY"/>
                             <constraint firstItem="aiI-7p-b5T" firstAttribute="top" secondItem="qAt-JD-EsI" secondAttribute="bottom" constant="15" id="QsJ-BE-aSg"/>
                             <constraint firstItem="qAt-JD-EsI" firstAttribute="leading" secondItem="KaK-fr-L6r" secondAttribute="leading" constant="10" id="Zdo-oi-75z"/>
                             <constraint firstItem="KaK-fr-L6r" firstAttribute="trailing" secondItem="aiI-7p-b5T" secondAttribute="trailing" constant="40" id="brO-iY-1Zz"/>
+                            <constraint firstItem="KaK-fr-L6r" firstAttribute="trailing" secondItem="9S9-CQ-inP" secondAttribute="trailing" id="ehq-Uc-8Dy"/>
                             <constraint firstItem="aiI-7p-b5T" firstAttribute="leading" secondItem="KaK-fr-L6r" secondAttribute="leading" constant="40" id="kBD-gW-8ll"/>
-                            <constraint firstItem="KaK-fr-L6r" firstAttribute="bottom" secondItem="d0O-6b-XGg" secondAttribute="bottom" constant="5" id="lNO-y1-fFm"/>
                             <constraint firstItem="KaK-fr-L6r" firstAttribute="trailing" secondItem="1CB-dR-VEI" secondAttribute="trailing" constant="40" id="pKX-cL-bKh"/>
                             <constraint firstItem="1CB-dR-VEI" firstAttribute="leading" secondItem="KaK-fr-L6r" secondAttribute="leading" constant="40" id="sGq-o5-UQh"/>
+                            <constraint firstItem="9S9-CQ-inP" firstAttribute="leading" secondItem="KaK-fr-L6r" secondAttribute="leading" id="vfX-TR-1wJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KaK-fr-L6r"/>
                     </view>
                     <navigationItem key="navigationItem" id="nAL-d7-kjY"/>
                     <connections>
+                        <outlet property="QuestionsView" destination="9S9-CQ-inP" id="cRt-LZ-FxJ"/>
                         <outlet property="QuizName" destination="qAt-JD-EsI" id="Bof-PK-V7b"/>
+                        <outlet property="QuizzImage" destination="aiI-7p-b5T" id="75K-Ab-dpU"/>
+                        <outlet property="StartQuizz" destination="1CB-dR-VEI" id="9Xh-W5-G7u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crR-1X-ahM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
